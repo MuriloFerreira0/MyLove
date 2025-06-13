@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>As Pequenas Grandes Vitórias da Adriana</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #ffc2d1;
+      color: #5d001e;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #b30059;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li::before {
+      content: '🌸';
+      margin-right: 8px;
+    }
+    blockquote {
+      background: #ffe5ec;
+      border-left: 4px solid #ff99c8;
+      padding: 1rem;
+      font-style: italic;
+      margin: 1rem 0;
+    }
+    .playlist {
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #ffe0f0;
+      font-weight: bold;
+      color: #5d001e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>As Pequenas Grandes Vitórias da Adriana</h1>
+    <p>“Cada passo que você dá, por menor que pareça, é um universo que floresce. E eu tenho orgulho de ver isso acontecer.” — Murilo</p>
+  </header>
+  <section>
+    <h2>Conquistas da Semana</h2>
+    <ul>
+      <li>Acordou cedo mesmo cansada.</li>
+      <li>Estudou mesmo sem vontade.</li>
+      <li>Tirou uma nota maior do que da ultima vez</li>
+      <li>Sorriu</li>
+      <li>Dirigiu bem</li>
+      <li>Se alimentou</li>
+      <li>Dormiu cedo</li>
+      <li>Conciliou mais uma semana</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Palavras do seu amor</h2>
+    <blockquote>Você é muito mais que suas falhas. Você é o processo. E eu admiro cada pedacinho dele.</blockquote>
+    <blockquote>Mesmo quando você não vê progresso, eu vejo sua coragem florescendo.</blockquote>
+    <blockquote>Você não precisa correr. Seu passo já é lindo.</blockquote>
+  </section>
+  <section>
+    <h2>Quando Você Se Perder...</h2>
+    <blockquote>
+      Respira fundo. Fecha os olhos. Lembra de tudo o que você já venceu. Nada do que você sente agora apaga a luz que existe em você. Eu tô aqui, e você não está sozinha.
+    </blockquote>
+    <blockquote>
+      Você não precisa ter todas as respostas. Só precisa lembrar que, mesmo confusa, você está caminhando. Um passo de cada vez, e eu sigo do seu lado.
+    </blockquote>
+    <blockquote>
+      Se esquecer quem você é, leia isso: você é força, doçura e coragem. Você é amor. E é incrível.
+    </blockquote>
+  </section>
+  <section>
+    <h2>Motivos pelos Quais Tenho Orgulho de Você</h2>
+    <ul>
+      <li>Porque você tenta, mesmo quando está cansada.</li>
+      <li>Porque você cuida das pessoas com o coração.</li>
+      <li>Porque você continua mesmo com medo.</li>
+      <li>Porque seu carinho transforma os dias.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Preciso de um Carinho</h2>
+    <button class="botao-carinho" onclick="mostrarCarinho()">Clique aqui 💗</button>
+    <div class="mensagem-carinho" id="mensagemCarinho"></div>
+  </section>
+  <footer>
+    Esse site é um lembrete: você está crescendo. Eu tô com você em cada passo. 💗
+  </footer>
+  <script>
+    const mensagens = [
+      'Você é o meu orgulho todos os dias.',
+      'Você ilumina tudo ao seu redor, mesmo sem perceber.',
+      'Nada pode apagar a força linda que existe dentro de você.',
+      'Você é mais amada do que imagina. Por mim e pelo mundo.',
+      'Nunca esqueça: eu acredito em você, sempre.',
+      'Cada passo seu é uma vitória, mesmo que pequena.',
+      'Você merece todo o amor do mundo — e eu tô aqui pra te lembrar disso.',
+      'Sua força me inspira mais do que imagina.',
+      'Tá tudo bem desacelerar, eu seguro sua mão.',
+      'Você é capaz de coisas incríveis, confia no seu tempo.',
+      'Você é linda, única e cheia de coragem.',
+      'Sempre que o mundo pesar, lembra que tem alguém aqui torcendo por você.',
+      'Você é muito mais forte do que pensa, e muito mais amada do que imagina.'
+    ];
+
+    function mostrarCarinho() {
+      const index = Math.floor(Math.random() * mensagens.length);
+      const div = document.getElementById('mensagemCarinho');
+      div.innerText = mensagens[index];
+      div.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
